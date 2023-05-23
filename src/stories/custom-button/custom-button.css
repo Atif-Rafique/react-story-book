@@ -1,0 +1,42 @@
+.new-contact-btn {
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #08fdd8;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid #08fdd8;
+    transition: all .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.new-contact-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    height: 100%;
+    width: 0;
+    background-color: #08fdd8;
+    z-index: -1;
+    transform: skewX(-50deg) !important;
+    transition: all .5s ease-in-out;
+}
+
+
+.new-contact-btn:hover {
+    font-weight: 600;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+.new-contact-btn:hover::before {
+    width: 150%;
+}
