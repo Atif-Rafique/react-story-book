@@ -36,5 +36,9 @@ export const Secondary: Story = {
         primary: false,
         type: 'button',
         text: 'Secondary Button',
+        handleClick: (event: React.MouseEvent<HTMLButtonElement>) => {
+            // Handle click logic here
+            console.log('Button clicked');
+        },
     },
 };
